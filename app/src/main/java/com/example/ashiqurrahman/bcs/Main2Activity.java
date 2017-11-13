@@ -7,20 +7,23 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import br.com.bloder.magic.view.MagicButton;
+
 public class Main2Activity extends AppCompatActivity {
-    Button b;
+   MagicButton m;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        b=(Button) findViewById(R.id.retun);
-        b.setOnClickListener(new View.OnClickListener() {
+        m=(MagicButton) findViewById(R.id.magiic);
+        m.setMagicButtonClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Thank you",Toast.LENGTH_SHORT).show();
-                Intent j = new Intent(Main2Activity.this,MainActivity.class);
-                startActivity(j);
+                Toast.makeText(getApplicationContext(),"thank you",Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(Main2Activity.this,Main3Activity.class);
+                startActivity(i);
+
             }
         });
     }

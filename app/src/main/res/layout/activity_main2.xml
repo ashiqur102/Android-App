@@ -7,40 +7,27 @@
     tools:context="com.example.ashiqurrahman.bcs.Main2Activity"
     tools:layout_editor_absoluteY="25dp"
     tools:layout_editor_absoluteX="0dp"
-    android:background="@color/lightorangedark">
+    android:background="#FFFF">
 
-
-    <TextView
-        android:id="@+id/textView"
+    <br.com.bloder.magic.view.MagicButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome! We Reached Second Activity"
-        android:textColor="#FFFF"
-        android:textSize="50dp"
-        android:textStyle="bold"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        app:button_icon_height="40dp"
+        app:button_icon_width="50dp"
+        app:expandable_area_color="#6B8E23"
+        app:button_icon="@drawable/bn"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintVertical_bias="0.23000002"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp" />
-
-    <Button
-        android:id="@+id/retun"
-        android:background="@drawable/buttonstyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Return"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:magic_button_size="75dp"
+        app:icon_button_color="#FFFF"
+        app:hide_text="সংবিধান"
+        app:hide_text_size="30sp"
+        app:hide_text_color="@color/lightorange"
+        android:id="@+id/magiic"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="71dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        tools:layout_constraintTop_creator="1"></br.com.bloder.magic.view.MagicButton>
+
 </android.support.constraint.ConstraintLayout>
